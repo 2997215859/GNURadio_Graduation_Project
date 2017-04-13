@@ -1,0 +1,4 @@
+/home/ruiy/gnuradio/gr-ruiy/python/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/ruiy/gnuradio/gr-ruiy/python/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/ruiy/gnuradio/gr-ruiy/python/python/CMakeFiles/pygen_python_665a3.dir
+/home/ruiy/gnuradio/gr-ruiy/python/CMakeFiles/uninstall.dir

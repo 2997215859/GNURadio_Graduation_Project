@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a6735ed41d8203a491a3b208ee4d5651" kind="dir">
+    <compoundname>ruiy</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ruiy/gnuradio/gr-ruiy/include/ruiy/"/>
+  </compounddef>
+</doxygen>

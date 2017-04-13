@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<block>
+  <name>mul_mod</name>
+  <key>ruiy_mul_mod</key>
+  <category>[ruiy]</category>
+  <import>import ruiy</import>
+  <make>ruiy.mul_mod($mod_type, $mod_code, $differential, $excess_bw, $sensitivity, $bt, $verbose, $log, $samples_per_symbol)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>modulation_type</name>
+    <key>mod_type</key>
+    <type>enum</type>
+    <option>
+      <name>bpsk</name>
+      <key>"bpsk"</key>
+    </option>
+    <option> 
+      <name>qpsk</name>
+      <key>"qpsk"</key>
+    </option>
+    <option>
+      <name>gfsk</name>
+      <key>"gfsk"</key>
+    </option>
+    <option>
+      <name>psk</name>
+      <key>"psk"</key>
+    </option>
+    <option>
+      <name>gmsk</name>
+      <key>"gmsk"</key>
+    </option>
+  </param>
+  <param>
+    <name>Gray Code</name>
+    <key>mod_code</key>
+    <type>enum</type>
+    <option>
+      <name>Yes</name>
+      <key>"gray"</key>
+    </option>
+    <option>
+      <name>No</name>
+      <key>"none"</key>
+    </option>
+  </param>
+  <param>
+    <name>Differential Encoding</name>
+    <key>differential</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Excess BW</name>
+    <key>excess_bw</key>
+    <value>0.35</value>
+    <type>real</type>
+  </param> 
+  <param>
+    <name>Verbose</name>
+    <key>verbose</key>
+    <value>False</value>
+    <type>bool</type>
+    <option>
+      <name>On</name>
+      <key>True</key>
+    </option>
+    <option>
+      <name>Off</name>
+      <key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Samples/Symbol</name>
+    <key>samples_per_symbol</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Log</name>
+    <key>log</key>
+    <value>False</value>
+    <type>bool</type>
+    <option>
+      <name>On</name>
+      <key>True</key>
+    </option>
+    <option>
+      <name>Off</name>
+      <key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Bt</name>
+    <key>bt</key>
+    <value>0.35</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Sensitivity</name>
+    <key>sensitivity</key>
+    <value>1</value>
+    <type>real</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>
