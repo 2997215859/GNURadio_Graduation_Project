@@ -91,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"ruiy_runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -149,6 +149,106 @@ depend:
 	cd /home/ruiy/gnuradio/gr-ruiy/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+lib/CMakeFiles/gnuradio-ruiy.dir/rule:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-ruiy.dir/rule
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/rule
+
+# Convenience name for target.
+gnuradio-ruiy: lib/CMakeFiles/gnuradio-ruiy.dir/rule
+.PHONY : gnuradio-ruiy
+
+# fast build rule for target.
+gnuradio-ruiy/fast:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/build
+.PHONY : gnuradio-ruiy/fast
+
+# Convenience name for target.
+lib/CMakeFiles/test-ruiy.dir/rule:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-ruiy.dir/rule
+.PHONY : lib/CMakeFiles/test-ruiy.dir/rule
+
+# Convenience name for target.
+test-ruiy: lib/CMakeFiles/test-ruiy.dir/rule
+.PHONY : test-ruiy
+
+# fast build rule for target.
+test-ruiy/fast:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/build
+.PHONY : test-ruiy/fast
+
+carrier_offset_impl.o: carrier_offset_impl.cc.o
+.PHONY : carrier_offset_impl.o
+
+# target to build an object file
+carrier_offset_impl.cc.o:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o
+.PHONY : carrier_offset_impl.cc.o
+
+carrier_offset_impl.i: carrier_offset_impl.cc.i
+.PHONY : carrier_offset_impl.i
+
+# target to preprocess a source file
+carrier_offset_impl.cc.i:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.i
+.PHONY : carrier_offset_impl.cc.i
+
+carrier_offset_impl.s: carrier_offset_impl.cc.s
+.PHONY : carrier_offset_impl.s
+
+# target to generate assembly for a file
+carrier_offset_impl.cc.s:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.s
+.PHONY : carrier_offset_impl.cc.s
+
+qa_ruiy.o: qa_ruiy.cc.o
+.PHONY : qa_ruiy.o
+
+# target to build an object file
+qa_ruiy.cc.o:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o
+.PHONY : qa_ruiy.cc.o
+
+qa_ruiy.i: qa_ruiy.cc.i
+.PHONY : qa_ruiy.i
+
+# target to preprocess a source file
+qa_ruiy.cc.i:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.i
+.PHONY : qa_ruiy.cc.i
+
+qa_ruiy.s: qa_ruiy.cc.s
+.PHONY : qa_ruiy.s
+
+# target to generate assembly for a file
+qa_ruiy.cc.s:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.s
+.PHONY : qa_ruiy.cc.s
+
+test_ruiy.o: test_ruiy.cc.o
+.PHONY : test_ruiy.o
+
+# target to build an object file
+test_ruiy.cc.o:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/test_ruiy.cc.o
+.PHONY : test_ruiy.cc.o
+
+test_ruiy.i: test_ruiy.cc.i
+.PHONY : test_ruiy.i
+
+# target to preprocess a source file
+test_ruiy.cc.i:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/test_ruiy.cc.i
+.PHONY : test_ruiy.cc.i
+
+test_ruiy.s: test_ruiy.cc.s
+.PHONY : test_ruiy.s
+
+# target to generate assembly for a file
+test_ruiy.cc.s:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/test_ruiy.cc.s
+.PHONY : test_ruiy.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -156,12 +256,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... gnuradio-ruiy"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test-ruiy"
+	@echo "... carrier_offset_impl.o"
+	@echo "... carrier_offset_impl.i"
+	@echo "... carrier_offset_impl.s"
+	@echo "... qa_ruiy.o"
+	@echo "... qa_ruiy.i"
+	@echo "... qa_ruiy.s"
+	@echo "... test_ruiy.o"
+	@echo "... test_ruiy.i"
+	@echo "... test_ruiy.s"
 .PHONY : help
 
 

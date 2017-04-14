@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/ruiy_swig_swig_2d0df.dir/ruiy_swig_swig_2d0df.cpp.o  -o ruiy_swig_swig_2d0df -rdynamic 

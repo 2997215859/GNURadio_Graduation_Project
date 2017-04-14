@@ -24,9 +24,9 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND ruiy_sources
-)
+    carrier_offset_impl.cc
+    )
 
 set(ruiy_sources "${ruiy_sources}" PARENT_SCOPE)
 if(NOT ruiy_sources)
@@ -56,11 +56,10 @@ GR_LIBRARY_FOO(gnuradio-ruiy RUNTIME_COMPONENT "ruiy_runtime" DEVEL_COMPONENT "r
 include(GrTest)
 
 include_directories(${CPPUNIT_INCLUDE_DIRS})
-
 list(APPEND test_ruiy_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_ruiy.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ruiy.cc
-)
+    )
 
 add_executable(test-ruiy ${test_ruiy_sources})
 

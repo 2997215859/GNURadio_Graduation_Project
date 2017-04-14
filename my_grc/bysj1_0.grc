@@ -128,7 +128,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 304)</value>
+      <value>(32, 304)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -187,7 +187,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(552, 328)</value>
+      <value>(840, 328)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -250,7 +250,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 504)</value>
+      <value>(1144, 504)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -617,7 +617,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 312)</value>
+      <value>(1144, 312)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -904,7 +904,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 144)</value>
+      <value>(1144, 144)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1232,6 +1232,49 @@
     </param>
   </block>
   <block>
+    <key>ruiy_carrier_offset</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(656, 328)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ruiy_carrier_offset_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>df_f0_ratio</key>
+      <value>1e-2</value>
+    </param>
+  </block>
+  <block>
     <key>ruiy_iqbal_gen_2_0</key>
     <param>
       <key>alias</key>
@@ -1251,7 +1294,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(520, 400)</value>
+      <value>(472, 312)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1283,7 +1326,7 @@
     </param>
     <param>
       <key>d</key>
-      <value>5</value>
+      <value>0</value>
     </param>
   </block>
   <block>
@@ -1318,7 +1361,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(312, 328)</value>
+      <value>(208, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1386,8 +1429,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ruiy_iqbal_gen_2_0_0</source_block_id>
+    <source_block_id>ruiy_carrier_offset_0</source_block_id>
     <sink_block_id>blocks_throttle_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ruiy_iqbal_gen_2_0_0</source_block_id>
+    <sink_block_id>ruiy_carrier_offset_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

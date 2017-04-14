@@ -32,3 +32,41 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "ruiy_runtime")
+  FOREACH(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-ruiy-1.0.0git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-ruiy-1.0.0git.so"
+      )
+    IF(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      FILE(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
+    ENDIF()
+  ENDFOREACH()
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/ruiy/gnuradio/gr-ruiy/build/lib/libgnuradio-ruiy-1.0.0git.so.0.0.0"
+    "/home/ruiy/gnuradio/gr-ruiy/build/lib/libgnuradio-ruiy-1.0.0git.so"
+    )
+  FOREACH(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-ruiy-1.0.0git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-ruiy-1.0.0git.so"
+      )
+    IF(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      FILE(RPATH_REMOVE
+           FILE "${file}")
+      IF(CMAKE_INSTALL_DO_STRIP)
+        EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
+      ENDIF(CMAKE_INSTALL_DO_STRIP)
+    ENDIF()
+  ENDFOREACH()
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "ruiy_runtime")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "ruiy_runtime")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
+    "/home/ruiy/gnuradio/gr-ruiy/build/lib/libgnuradio-ruiy.so"
+    "/home/ruiy/gnuradio/gr-ruiy/build/lib/libgnuradio-ruiy-1.0.0git.so.0"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "ruiy_runtime")
+

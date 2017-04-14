@@ -22,5 +22,6 @@
 ########################################################################
 install(FILES
     api.h
+    carrier_offset.h
     DESTINATION include/ruiy
 )

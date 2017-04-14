@@ -1,5 +1,16 @@
 /usr/local/lib/cmake/ruiy/ruiyConfig.cmake
 /usr/local/include/ruiy/api.h
+/usr/local/include/ruiy/carrier_offset.h
+/usr/local/lib/libgnuradio-ruiy-1.0.0git.so.0.0.0
+/usr/local/lib/libgnuradio-ruiy-1.0.0git.so
+/usr/local/lib/libgnuradio-ruiy.so
+/usr/local/lib/libgnuradio-ruiy-1.0.0git.so.0
+/usr/local/lib/python2.7/dist-packages/ruiy/_ruiy_swig.so
+/usr/local/lib/python2.7/dist-packages/ruiy/ruiy_swig.py
+/usr/local/lib/python2.7/dist-packages/ruiy/ruiy_swig.pyc
+/usr/local/lib/python2.7/dist-packages/ruiy/ruiy_swig.pyo
+/usr/local/include/ruiy/ruiy/swig/ruiy_swig.i
+/usr/local/include/ruiy/ruiy/swig/ruiy_swig_doc.i
 /usr/local/lib/python2.7/dist-packages/ruiy/__init__.py
 /usr/local/lib/python2.7/dist-packages/ruiy/mul_mod.py
 /usr/local/lib/python2.7/dist-packages/ruiy/iqbal_gen_2_0.py
@@ -11,6 +22,7 @@
 /usr/local/lib/python2.7/dist-packages/ruiy/iqbal_gen_2_0.pyo
 /usr/local/share/gnuradio/grc/blocks/ruiy_mul_mod.xml
 /usr/local/share/gnuradio/grc/blocks/ruiy_iqbal_gen_2_0.xml
+/usr/local/share/gnuradio/grc/blocks/ruiy_carrier_offset.xml
 /usr/local/share/doc/gr-ruiy/xml/dir_a6735ed41d8203a491a3b208ee4d5651.xml
 /usr/local/share/doc/gr-ruiy/xml/index.xsd
 /usr/local/share/doc/gr-ruiy/xml/indexpage.xml

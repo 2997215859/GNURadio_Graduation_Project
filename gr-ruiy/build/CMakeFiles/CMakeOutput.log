@@ -261,3 +261,94 @@ Parsed C implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec414788483/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec414788483.dir/build.make CMakeFiles/cmTryCompileExec414788483.dir/build
+make[1]: 正在进入目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec414788483.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec414788483.dir/CheckIncludeFile.c.o   -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec414788483
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec414788483.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec414788483.dir/CheckIncludeFile.c.o  -o cmTryCompileExec414788483 -rdynamic 
+make[1]:正在离开目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1713927255/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1713927255.dir/build.make CMakeFiles/cmTryCompileExec1713927255.dir/build
+make[1]: 正在进入目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1713927255.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1713927255.dir/CheckIncludeFile.c.o   -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1713927255
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1713927255.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1713927255.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1713927255 -rdynamic 
+make[1]:正在离开目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec658412548/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec658412548.dir/build.make CMakeFiles/cmTryCompileExec658412548.dir/build
+make[1]: 正在进入目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec658412548.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec658412548.dir/CheckIncludeFile.c.o   -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec658412548
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec658412548.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec658412548.dir/CheckIncludeFile.c.o  -o cmTryCompileExec658412548 -rdynamic 
+make[1]:正在离开目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1053792342/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1053792342.dir/build.make CMakeFiles/cmTryCompileExec1053792342.dir/build
+make[1]: 正在进入目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1053792342.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1053792342.dir/SIZEOF_SIZE_T.c.o   -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTryCompileExec1053792342
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1053792342.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1053792342.dir/SIZEOF_SIZE_T.c.o  -o cmTryCompileExec1053792342 -rdynamic 
+make[1]:正在离开目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec974927491/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec974927491.dir/build.make CMakeFiles/cmTryCompileExec974927491.dir/build
+make[1]: 正在进入目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec974927491.dir/SIZEOF_UINT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec974927491.dir/SIZEOF_UINT.c.o   -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT.c
+Linking C executable cmTryCompileExec974927491
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec974927491.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec974927491.dir/SIZEOF_UINT.c.o  -o cmTryCompileExec974927491 -rdynamic 
+make[1]:正在离开目录 `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAVE_WNO_UNUSED_BUT_SET_VARIABLE succeded with the following output:
+Change Dir: /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1933891266/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1933891266.dir/build.make CMakeFiles/cmTryCompileExec1933891266.dir/build
+make[1]: Entering directory `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1933891266.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE   -Wno-unused-but-set-variable -o CMakeFiles/cmTryCompileExec1933891266.dir/src.cxx.o -c /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1933891266
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1933891266.dir/link.txt --verbose=1
+/usr/bin/c++    -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE    CMakeFiles/cmTryCompileExec1933891266.dir/src.cxx.o  -o cmTryCompileExec1933891266 -rdynamic 
+make[1]: Leaving directory `/home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}

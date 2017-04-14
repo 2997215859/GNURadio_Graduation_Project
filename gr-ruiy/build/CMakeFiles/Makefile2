@@ -102,11 +102,13 @@ include/ruiy/preinstall:
 # Directory level rules for directory lib
 
 # Convenience name for "all" pass in the directory.
-lib/all:
+lib/all: lib/CMakeFiles/gnuradio-ruiy.dir/all
+lib/all: lib/CMakeFiles/test-ruiy.dir/all
 .PHONY : lib/all
 
 # Convenience name for "clean" pass in the directory.
-lib/clean:
+lib/clean: lib/CMakeFiles/gnuradio-ruiy.dir/clean
+lib/clean: lib/CMakeFiles/test-ruiy.dir/clean
 .PHONY : lib/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -114,19 +116,306 @@ lib/preinstall:
 .PHONY : lib/preinstall
 
 #=============================================================================
+# Target rules for target lib/CMakeFiles/gnuradio-ruiy.dir
+
+# All Build rule for target.
+lib/CMakeFiles/gnuradio-ruiy.dir/all:
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/depend
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  5
+	@echo "Built target gnuradio-ruiy"
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/all
+
+# Include target in all.
+all: lib/CMakeFiles/gnuradio-ruiy.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lib/CMakeFiles/gnuradio-ruiy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-ruiy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/rule
+
+# Convenience name for target.
+gnuradio-ruiy: lib/CMakeFiles/gnuradio-ruiy.dir/rule
+.PHONY : gnuradio-ruiy
+
+# clean rule for target.
+lib/CMakeFiles/gnuradio-ruiy.dir/clean:
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/clean
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/clean
+
+# clean rule for target.
+clean: lib/CMakeFiles/gnuradio-ruiy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target lib/CMakeFiles/test-ruiy.dir
+
+# All Build rule for target.
+lib/CMakeFiles/test-ruiy.dir/all: lib/CMakeFiles/gnuradio-ruiy.dir/all
+	$(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/depend
+	$(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  16 17
+	@echo "Built target test-ruiy"
+.PHONY : lib/CMakeFiles/test-ruiy.dir/all
+
+# Include target in all.
+all: lib/CMakeFiles/test-ruiy.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lib/CMakeFiles/test-ruiy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-ruiy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : lib/CMakeFiles/test-ruiy.dir/rule
+
+# Convenience name for target.
+test-ruiy: lib/CMakeFiles/test-ruiy.dir/rule
+.PHONY : test-ruiy
+
+# clean rule for target.
+lib/CMakeFiles/test-ruiy.dir/clean:
+	$(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/clean
+.PHONY : lib/CMakeFiles/test-ruiy.dir/clean
+
+# clean rule for target.
+clean: lib/CMakeFiles/test-ruiy.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory swig
 
 # Convenience name for "all" pass in the directory.
-swig/all:
+swig/all: swig/CMakeFiles/_ruiy_swig.dir/all
+swig/all: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+swig/all: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all
+swig/all: swig/CMakeFiles/pygen_swig_cd98d.dir/all
+swig/all: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
 .PHONY : swig/all
 
 # Convenience name for "clean" pass in the directory.
-swig/clean:
+swig/clean: swig/CMakeFiles/_ruiy_swig.dir/clean
+swig/clean: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/clean
+swig/clean: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/clean
+swig/clean: swig/CMakeFiles/pygen_swig_cd98d.dir/clean
+swig/clean: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/clean
+swig/clean: swig/CMakeFiles/ruiy_swig_swig_doc.dir/clean
 .PHONY : swig/clean
 
 # Convenience name for "preinstall" pass in the directory.
 swig/preinstall:
 .PHONY : swig/preinstall
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_ruiy_swig.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_ruiy_swig.dir/all: lib/CMakeFiles/gnuradio-ruiy.dir/all
+swig/CMakeFiles/_ruiy_swig.dir/all: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig.dir/build.make swig/CMakeFiles/_ruiy_swig.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig.dir/build.make swig/CMakeFiles/_ruiy_swig.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  1
+	@echo "Built target _ruiy_swig"
+.PHONY : swig/CMakeFiles/_ruiy_swig.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_ruiy_swig.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_ruiy_swig.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_ruiy_swig.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_ruiy_swig.dir/rule
+
+# Convenience name for target.
+_ruiy_swig: swig/CMakeFiles/_ruiy_swig.dir/rule
+.PHONY : _ruiy_swig
+
+# clean rule for target.
+swig/CMakeFiles/_ruiy_swig.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig.dir/build.make swig/CMakeFiles/_ruiy_swig.dir/clean
+.PHONY : swig/CMakeFiles/_ruiy_swig.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_ruiy_swig.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_ruiy_swig_doc_tag.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_doc_tag.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  2
+	@echo "Built target _ruiy_swig_doc_tag"
+.PHONY : swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_ruiy_swig_doc_tag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_ruiy_swig_doc_tag.dir/rule
+
+# Convenience name for target.
+_ruiy_swig_doc_tag: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/rule
+.PHONY : _ruiy_swig_doc_tag
+
+# clean rule for target.
+swig/CMakeFiles/_ruiy_swig_doc_tag.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_doc_tag.dir/clean
+.PHONY : swig/CMakeFiles/_ruiy_swig_doc_tag.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_ruiy_swig_swig_tag.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all: swig/CMakeFiles/ruiy_swig_swig_doc.dir/all
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_swig_tag.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  3
+	@echo "Built target _ruiy_swig_swig_tag"
+.PHONY : swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_ruiy_swig_swig_tag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_ruiy_swig_swig_tag.dir/rule
+
+# Convenience name for target.
+_ruiy_swig_swig_tag: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/rule
+.PHONY : _ruiy_swig_swig_tag
+
+# clean rule for target.
+swig/CMakeFiles/_ruiy_swig_swig_tag.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_swig_tag.dir/clean
+.PHONY : swig/CMakeFiles/_ruiy_swig_swig_tag.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/pygen_swig_cd98d.dir
+
+# All Build rule for target.
+swig/CMakeFiles/pygen_swig_cd98d.dir/all: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_cd98d.dir/build.make swig/CMakeFiles/pygen_swig_cd98d.dir/depend
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_cd98d.dir/build.make swig/CMakeFiles/pygen_swig_cd98d.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  8 9
+	@echo "Built target pygen_swig_cd98d"
+.PHONY : swig/CMakeFiles/pygen_swig_cd98d.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/pygen_swig_cd98d.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/pygen_swig_cd98d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_cd98d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/pygen_swig_cd98d.dir/rule
+
+# Convenience name for target.
+pygen_swig_cd98d: swig/CMakeFiles/pygen_swig_cd98d.dir/rule
+.PHONY : pygen_swig_cd98d
+
+# clean rule for target.
+swig/CMakeFiles/pygen_swig_cd98d.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_cd98d.dir/build.make swig/CMakeFiles/pygen_swig_cd98d.dir/clean
+.PHONY : swig/CMakeFiles/pygen_swig_cd98d.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/pygen_swig_cd98d.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/ruiy_swig_swig_2d0df.dir
+
+# All Build rule for target.
+swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all: swig/CMakeFiles/_ruiy_swig_swig_tag.dir/all
+swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build.make swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/depend
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build.make swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  10 11 12 13
+	@echo "Built target ruiy_swig_swig_2d0df"
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/rule
+
+# Convenience name for target.
+ruiy_swig_swig_2d0df: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/rule
+.PHONY : ruiy_swig_swig_2d0df
+
+# clean rule for target.
+swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build.make swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/clean
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/ruiy_swig_swig_doc.dir
+
+# All Build rule for target.
+swig/CMakeFiles/ruiy_swig_swig_doc.dir/all: swig/CMakeFiles/_ruiy_swig_doc_tag.dir/all
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_doc.dir/build.make swig/CMakeFiles/ruiy_swig_swig_doc.dir/depend
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_doc.dir/build.make swig/CMakeFiles/ruiy_swig_swig_doc.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  14 15
+	@echo "Built target ruiy_swig_swig_doc"
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_doc.dir/all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/ruiy_swig_swig_doc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/ruiy_swig_swig_doc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_doc.dir/rule
+
+# Convenience name for target.
+ruiy_swig_swig_doc: swig/CMakeFiles/ruiy_swig_swig_doc.dir/rule
+.PHONY : ruiy_swig_swig_doc
+
+# clean rule for target.
+swig/CMakeFiles/ruiy_swig_swig_doc.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_doc.dir/build.make swig/CMakeFiles/ruiy_swig_swig_doc.dir/clean
+.PHONY : swig/CMakeFiles/ruiy_swig_swig_doc.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/ruiy_swig_swig_doc.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory python
@@ -150,7 +439,7 @@ python/preinstall:
 python/CMakeFiles/pygen_python_07063.dir/all:
 	$(MAKE) -f python/CMakeFiles/pygen_python_07063.dir/build.make python/CMakeFiles/pygen_python_07063.dir/depend
 	$(MAKE) -f python/CMakeFiles/pygen_python_07063.dir/build.make python/CMakeFiles/pygen_python_07063.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  6 7
 	@echo "Built target pygen_python_07063"
 .PHONY : python/CMakeFiles/pygen_python_07063.dir/all
 
@@ -280,7 +569,7 @@ docs/doxygen/preinstall:
 docs/doxygen/CMakeFiles/doxygen_target.dir/all:
 	$(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/depend
 	$(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles  4
 	@echo "Built target doxygen_target"
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/all
 

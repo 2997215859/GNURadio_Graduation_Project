@@ -91,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"ruiy_runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -163,6 +163,110 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
+# Target rules for targets named gnuradio-ruiy
+
+# Build rule for target.
+gnuradio-ruiy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-ruiy
+.PHONY : gnuradio-ruiy
+
+# fast build rule for target.
+gnuradio-ruiy/fast:
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/build
+.PHONY : gnuradio-ruiy/fast
+
+#=============================================================================
+# Target rules for targets named test-ruiy
+
+# Build rule for target.
+test-ruiy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test-ruiy
+.PHONY : test-ruiy
+
+# fast build rule for target.
+test-ruiy/fast:
+	$(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/build
+.PHONY : test-ruiy/fast
+
+#=============================================================================
+# Target rules for targets named _ruiy_swig
+
+# Build rule for target.
+_ruiy_swig: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ruiy_swig
+.PHONY : _ruiy_swig
+
+# fast build rule for target.
+_ruiy_swig/fast:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig.dir/build.make swig/CMakeFiles/_ruiy_swig.dir/build
+.PHONY : _ruiy_swig/fast
+
+#=============================================================================
+# Target rules for targets named _ruiy_swig_doc_tag
+
+# Build rule for target.
+_ruiy_swig_doc_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ruiy_swig_doc_tag
+.PHONY : _ruiy_swig_doc_tag
+
+# fast build rule for target.
+_ruiy_swig_doc_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_doc_tag.dir/build
+.PHONY : _ruiy_swig_doc_tag/fast
+
+#=============================================================================
+# Target rules for targets named _ruiy_swig_swig_tag
+
+# Build rule for target.
+_ruiy_swig_swig_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ruiy_swig_swig_tag
+.PHONY : _ruiy_swig_swig_tag
+
+# fast build rule for target.
+_ruiy_swig_swig_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build.make swig/CMakeFiles/_ruiy_swig_swig_tag.dir/build
+.PHONY : _ruiy_swig_swig_tag/fast
+
+#=============================================================================
+# Target rules for targets named pygen_swig_cd98d
+
+# Build rule for target.
+pygen_swig_cd98d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_cd98d
+.PHONY : pygen_swig_cd98d
+
+# fast build rule for target.
+pygen_swig_cd98d/fast:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_cd98d.dir/build.make swig/CMakeFiles/pygen_swig_cd98d.dir/build
+.PHONY : pygen_swig_cd98d/fast
+
+#=============================================================================
+# Target rules for targets named ruiy_swig_swig_2d0df
+
+# Build rule for target.
+ruiy_swig_swig_2d0df: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ruiy_swig_swig_2d0df
+.PHONY : ruiy_swig_swig_2d0df
+
+# fast build rule for target.
+ruiy_swig_swig_2d0df/fast:
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build.make swig/CMakeFiles/ruiy_swig_swig_2d0df.dir/build
+.PHONY : ruiy_swig_swig_2d0df/fast
+
+#=============================================================================
+# Target rules for targets named ruiy_swig_swig_doc
+
+# Build rule for target.
+ruiy_swig_swig_doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ruiy_swig_swig_doc
+.PHONY : ruiy_swig_swig_doc
+
+# fast build rule for target.
+ruiy_swig_swig_doc/fast:
+	$(MAKE) -f swig/CMakeFiles/ruiy_swig_swig_doc.dir/build.make swig/CMakeFiles/ruiy_swig_swig_doc.dir/build
+.PHONY : ruiy_swig_swig_doc/fast
+
+#=============================================================================
 # Target rules for targets named pygen_python_07063
 
 # Build rule for target.
@@ -215,6 +319,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... uninstall"
+	@echo "... gnuradio-ruiy"
+	@echo "... test-ruiy"
+	@echo "... _ruiy_swig"
+	@echo "... _ruiy_swig_doc_tag"
+	@echo "... _ruiy_swig_swig_tag"
+	@echo "... pygen_swig_cd98d"
+	@echo "... ruiy_swig_swig_2d0df"
+	@echo "... ruiy_swig_swig_doc"
 	@echo "... pygen_python_07063"
 	@echo "... pygen_apps_9a6dd"
 	@echo "... doxygen_target"

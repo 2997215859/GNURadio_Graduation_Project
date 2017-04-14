@@ -16,8 +16,9 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     ruiy_mul_mod.xml
-    ruiy_iqbal_gen_2_0.xml DESTINATION share/gnuradio/grc/blocks
+    ruiy_iqbal_gen_2_0.xml
+    ruiy_carrier_offset.xml
+    DESTINATION share/gnuradio/grc/blocks
 )

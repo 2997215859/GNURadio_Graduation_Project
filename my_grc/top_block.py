@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Thu Apr 13 11:16:46 2017
+# Generated: Fri Apr 14 15:27:33 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -66,7 +66,8 @@ class top_block(gr.top_block, Qt.QWidget):
         # Blocks
         ##################################################
         self.ruiy_mul_mod_0 = ruiy.mul_mod("psk", "gray", True, 0.35, 1, 0.35, False, False, 2)
-        self.ruiy_iqbal_gen_2_0_0 = ruiy.iqbal_gen_2_0(0, 0, 0, 5)
+        self.ruiy_iqbal_gen_2_0_0 = ruiy.iqbal_gen_2_0(0, 0, 0, 0)
+        self.ruiy_carrier_offset_0 = ruiy.carrier_offset(1e-2)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
         	1024, #size
         	"", #name
@@ -116,7 +117,8 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         self.connect((self.analog_random_source_x_0, 0), (self.ruiy_mul_mod_0, 0))
         self.connect((self.blocks_throttle_0, 0), (self.qtgui_const_sink_x_0, 0))
-        self.connect((self.ruiy_iqbal_gen_2_0_0, 0), (self.blocks_throttle_0, 0))
+        self.connect((self.ruiy_carrier_offset_0, 0), (self.blocks_throttle_0, 0))
+        self.connect((self.ruiy_iqbal_gen_2_0_0, 0), (self.ruiy_carrier_offset_0, 0))
         self.connect((self.ruiy_mul_mod_0, 0), (self.ruiy_iqbal_gen_2_0_0, 0))
 
     def closeEvent(self, event):

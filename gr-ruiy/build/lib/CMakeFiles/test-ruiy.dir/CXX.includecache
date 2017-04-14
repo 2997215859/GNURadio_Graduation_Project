@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ruiy/gnuradio/gr-ruiy/lib/qa_ruiy.cc
+qa_ruiy.h
+/home/ruiy/gnuradio/gr-ruiy/lib/qa_ruiy.h
+
+/home/ruiy/gnuradio/gr-ruiy/lib/qa_ruiy.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/usr/local/include/gnuradio/attributes.h
+
