@@ -23,5 +23,5 @@
 install(FILES
     api.h
     carrier_offset.h
-    DESTINATION include/ruiy
+    nonlinear.h DESTINATION include/ruiy
 )

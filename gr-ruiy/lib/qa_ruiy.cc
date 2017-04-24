@@ -26,11 +26,13 @@
  */
 
 #include "qa_ruiy.h"
+#include "qa_nonlinear.h"
 
 CppUnit::TestSuite *
 qa_ruiy::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("ruiy");
+  s->addTest(gr::ruiy::qa_nonlinear::suite());
 
   return s;
 }

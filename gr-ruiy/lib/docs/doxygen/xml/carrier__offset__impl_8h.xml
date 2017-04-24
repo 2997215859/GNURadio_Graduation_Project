@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="carrier__offset__impl_8h" kind="file">
+    <compoundname>carrier_offset_impl.h</compoundname>
+    <includes refid="carrier__offset_8h" local="no">ruiy/carrier_offset.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ruiy/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ruiy/carrier_offset.h</label>
+        <link refid="carrier__offset_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="17">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="13">
+        <label>carrier_offset_impl.h</label>
+        <link refid="carrier_offset_impl.h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1ruiy_1_1carrier__offset__impl" prot="public">gr::ruiy::carrier_offset_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1ruiy">gr::ruiy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ruiy/gnuradio/gr-ruiy/lib/carrier_offset_impl.h"/>
+  </compounddef>
+</doxygen>

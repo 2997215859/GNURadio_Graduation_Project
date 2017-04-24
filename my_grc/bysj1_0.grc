@@ -93,7 +93,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 160)</value>
+      <value>(184, 8)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -128,7 +128,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(32, 304)</value>
+      <value>(8, 304)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -187,7 +187,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(840, 328)</value>
+      <value>(816, 328)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -223,6 +223,61 @@
     </param>
   </block>
   <block>
+    <key>digital_gmsk_mod</key>
+    <param>
+      <key>bt</key>
+      <value>0.3</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(200, 504)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_gmsk_mod_0</value>
+    </param>
+    <param>
+      <key>log</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>samples_per_symbol</key>
+      <value>4</value>
+    </param>
+    <param>
+      <key>verbose</key>
+      <value>False</value>
+    </param>
+  </block>
+  <block>
     <key>qtgui_const_sink_x</key>
     <param>
       <key>autoscale</key>
@@ -246,11 +301,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1144, 504)</value>
+      <value>(1120, 504)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -617,7 +672,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1144, 312)</value>
+      <value>(1120, 312)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -904,7 +959,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1144, 144)</value>
+      <value>(1120, 144)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1251,7 +1306,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(656, 328)</value>
+      <value>(536, 328)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1271,7 +1326,7 @@
     </param>
     <param>
       <key>df_f0_ratio</key>
-      <value>1e-2</value>
+      <value>1e-6</value>
     </param>
   </block>
   <block>
@@ -1290,11 +1345,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(472, 312)</value>
+      <value>(392, 312)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1310,7 +1365,7 @@
     </param>
     <param>
       <key>mag</key>
-      <value>0</value>
+      <value>10</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1353,7 +1408,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>excess_bw</key>
@@ -1361,7 +1416,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(208, 260)</value>
+      <value>(184, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1401,9 +1456,54 @@
     </param>
     <param>
       <key>mod_type</key>
-      <value>"psk"</value>
+      <value>"gmsk"</value>
     </param>
   </block>
+  <block>
+    <key>ruiy_nonlinear</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(680, 336)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ruiy_nonlinear_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <connection>
+    <source_block_id>analog_random_source_x_0</source_block_id>
+    <sink_block_id>digital_gmsk_mod_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
   <connection>
     <source_block_id>analog_random_source_x_0</source_block_id>
     <sink_block_id>ruiy_mul_mod_0</sink_block_id>
@@ -1429,8 +1529,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>digital_gmsk_mod_0</source_block_id>
+    <sink_block_id>ruiy_iqbal_gen_2_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>ruiy_carrier_offset_0</source_block_id>
-    <sink_block_id>blocks_throttle_0</sink_block_id>
+    <sink_block_id>ruiy_nonlinear_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1443,6 +1549,12 @@
   <connection>
     <source_block_id>ruiy_mul_mod_0</source_block_id>
     <sink_block_id>ruiy_iqbal_gen_2_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ruiy_nonlinear_0</source_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1ruiy_1_1carrier__offset" kind="class"><name>gr::ruiy::carrier_offset</name>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset_1a6bb4e177e7d36a84fecbd22a79fe84bd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset_1a19c062c60ab7d97b88b071c51524c86a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1ruiy_1_1nonlinear" kind="class"><name>gr::ruiy::nonlinear</name>
+    <member refid="classgr_1_1ruiy_1_1nonlinear_1a2568eda190694fa098257e1051ca1b95" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear_1a08b7a4ab2f107c334a19865f5f187f25" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1ruiy" kind="namespace"><name>gr::ruiy</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a00f24fbd312277ffbe35f754d1f5a39d" kind="define"><name>RUIY_API</name></member>
+  </compound>
+  <compound refid="carrier__offset_8h" kind="file"><name>carrier_offset.h</name>
+  </compound>
+  <compound refid="nonlinear_8h" kind="file"><name>nonlinear.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/ruiy/gnuradio/gr-ruiy/include</name>
+  </compound>
+  <compound refid="dir_a6735ed41d8203a491a3b208ee4d5651" kind="dir"><name>/home/ruiy/gnuradio/gr-ruiy/include/ruiy</name>
+  </compound>
+</doxygenindex>
