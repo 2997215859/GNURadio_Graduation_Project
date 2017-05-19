@@ -5,6 +5,10 @@
   <category>[ruiy]</category>
   <import>import ruiy</import>
   <make>ruiy.iqbal_gen_3_0($mag, $theta, $dc_i, $dc_q)</make>
+  <callback>set_mag($mag)</callback>
+  <callback>set_theta($theta)</callback>
+  <callback>set_dc_i($dc_i)</callback>
+  <callback>set_dc_q($dc_q)</callback>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name

@@ -46,7 +46,6 @@ class iqbal_gen_3_0(gr.hier_block2):
         self.theta = theta
         self.dc_i = dc_i
         self.dc_q = dc_q
-        self.half_theta = half_theta
         ##################################################
         # Blocks
         ##################################################
@@ -92,4 +91,38 @@ class iqbal_gen_3_0(gr.hier_block2):
         self.connect((self.blocks_add_const_vxx_1, 0), (self.blocks_float_to_complex, 1))
 
         self.connect((self.blocks_float_to_complex, 0), (self, 0))
+    
+    def get_mag(self):
+        return self.mag
+    
+    def set_mag(self, mag):
+        self.mag = mag
+        self.blocks_mag_0.set_k((1+mag, ))
+        self.blocks_mag_1.set_k((1-mag, ))
 
+    def get_theta(self):
+        return self.phase
+
+    def set_theta(self, theta):
+        self.theta = theta
+        half_theta = theta/2;
+        half_theta = half_theta*math.pi/180.0
+    
+        self.blocks_multiply_const_vxx_0.set_k((math.cos(half_theta), ))
+        self.blocks_multiply_const_vxx_1.set_k((-math.sin(half_theta), ))
+        self.blocks_multiply_const_vxx_2.set_k((-math.sin(half_theta), ))
+        self.blocks_multiply_const_vxx_3.set_k((math.cos(half_theta), ))
+
+    def get_dc_i(self):
+        return self.dc_i
+
+    def set_dc_i(self, dc_i):
+        self.dc_i = dc_i
+        self.blocks_add_const_vxx_0.set_k((dc_i, ))
+
+    def get_dc_q(self):
+        return self.dc_q
+
+    def set_dc_q(self, dc_q):
+        self.dc_q = dc_q
+        self.blocks_add_const_vxx_1.set_k((dc_q, ))

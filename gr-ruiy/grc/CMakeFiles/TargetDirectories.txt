@@ -1,0 +1,12 @@
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/_ruiy_swig.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/_ruiy_swig_doc_tag.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/_ruiy_swig_swig_tag.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/lib/CMakeFiles/gnuradio-ruiy.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/python/CMakeFiles/pygen_python_e0370.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/pygen_swig_eed60.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/ruiy_swig_swig_2d0df.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/swig/CMakeFiles/ruiy_swig_swig_doc.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/lib/CMakeFiles/test-ruiy.dir
+/home/ruiy/gnuradio/gr-ruiy/grc/CMakeFiles/uninstall.dir

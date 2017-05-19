@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1ruiy_1_1nonlinear__impl" kind="class" prot="public">
+    <compoundname>gr::ruiy::nonlinear_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ruiy_1_1nonlinear" prot="public" virt="non-virtual">gr::ruiy::nonlinear</basecompoundref>
+    <includes refid="nonlinear__impl_8h" local="no">nonlinear_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1ruiy_1_1nonlinear__impl_1ae99d2e22edfdeefd69722cda44806d87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ruiy::nonlinear_impl::d_is_nonlinear</definition>
+        <argsstring></argsstring>
+        <name>d_is_nonlinear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="34" column="1" bodyfile="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1abfb99cf89d58bdd2bc8b29626532b5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ruiy::nonlinear_impl::nonlinear_impl</definition>
+        <argsstring>(bool is_nonlinear)</argsstring>
+        <name>nonlinear_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>is_nonlinear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1ae6ab498e394f0986aced1984a1a20652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ruiy::nonlinear_impl::~nonlinear_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~nonlinear_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1a00191da8d4732c51b6082a9feb26d11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ruiy::nonlinear_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1a312e213f57968c3675a1158f66d6e32c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::ruiy::nonlinear_impl::complex_power</definition>
+        <argsstring>(gr_complex b, int num)</argsstring>
+        <name>complex_power</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1a0630aed8ed7d2969d6dcd48319a41fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::ruiy::nonlinear_impl::complex_mul</definition>
+        <argsstring>(gr_complex a, gr_complex b)</argsstring>
+        <name>complex_mul</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>gr_complex</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ruiy_1_1nonlinear__impl_1af1e6d46efecb6f9091f214dffb1d7079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ruiy::nonlinear_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>gr::ruiy::nonlinear_impl</label>
+        <link refid="classgr_1_1ruiy_1_1nonlinear__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>block</label>
+      </node>
+      <node id="17">
+        <label>gr::ruiy::nonlinear</label>
+        <link refid="classgr_1_1ruiy_1_1nonlinear"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>gr::ruiy::nonlinear_impl</label>
+        <link refid="classgr_1_1ruiy_1_1nonlinear__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>block</label>
+      </node>
+      <node id="20">
+        <label>gr::ruiy::nonlinear</label>
+        <link refid="classgr_1_1ruiy_1_1nonlinear"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" line="30" column="1" bodyfile="/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h" bodystart="29" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a0630aed8ed7d2969d6dcd48319a41fbf" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>complex_mul</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a312e213f57968c3675a1158f66d6e32c" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>complex_power</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1ae99d2e22edfdeefd69722cda44806d87" prot="private" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>d_is_nonlinear</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a00191da8d4732c51b6082a9feb26d11e" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1af1e6d46efecb6f9091f214dffb1d7079" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear_1adadabff35ab8eca6fb30ded29ce944fa" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1abfb99cf89d58bdd2bc8b29626532b5f8" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>nonlinear_impl</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear_1a2568eda190694fa098257e1051ca1b95" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1ae6ab498e394f0986aced1984a1a20652" prot="public" virt="non-virtual"><scope>gr::ruiy::nonlinear_impl</scope><name>~nonlinear_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

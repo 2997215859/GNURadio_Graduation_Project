@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1ruiy_1_1carrier__offset" kind="class"><name>gr::ruiy::carrier_offset</name>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset_1a6bb4e177e7d36a84fecbd22a79fe84bd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset_1a19c062c60ab7d97b88b071c51524c86a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1ruiy_1_1carrier__offset__impl" kind="class"><name>gr::ruiy::carrier_offset_impl</name>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset__impl_1a3f6979a2752ef2c99acab942a95e5f35" kind="variable"><name>d_df_f0_ratio</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset__impl_1a42287aea058aa499b33e1c733b02de48" kind="function"><name>carrier_offset_impl</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset__impl_1a8a461bebf4df60e96a6351f5e7dc6957" kind="function"><name>~carrier_offset_impl</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset__impl_1aea5aac75d97f719cc7862d35462c0fe7" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1ruiy_1_1carrier__offset__impl_1aad6db1a1471a1698a66fa499dabddeb8" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1ruiy_1_1nonlinear" kind="class"><name>gr::ruiy::nonlinear</name>
+    <member refid="classgr_1_1ruiy_1_1nonlinear_1a2568eda190694fa098257e1051ca1b95" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear_1adadabff35ab8eca6fb30ded29ce944fa" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1ruiy_1_1nonlinear__impl" kind="class"><name>gr::ruiy::nonlinear_impl</name>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1ae99d2e22edfdeefd69722cda44806d87" kind="variable"><name>d_is_nonlinear</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1abfb99cf89d58bdd2bc8b29626532b5f8" kind="function"><name>nonlinear_impl</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1ae6ab498e394f0986aced1984a1a20652" kind="function"><name>~nonlinear_impl</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a00191da8d4732c51b6082a9feb26d11e" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a312e213f57968c3675a1158f66d6e32c" kind="function"><name>complex_power</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1a0630aed8ed7d2969d6dcd48319a41fbf" kind="function"><name>complex_mul</name></member>
+    <member refid="classgr_1_1ruiy_1_1nonlinear__impl_1af1e6d46efecb6f9091f214dffb1d7079" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1ruiy" kind="namespace"><name>gr::ruiy</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a00f24fbd312277ffbe35f754d1f5a39d" kind="define"><name>RUIY_API</name></member>
+  </compound>
+  <compound refid="carrier__offset_8h" kind="file"><name>carrier_offset.h</name>
+  </compound>
+  <compound refid="carrier__offset__impl_8h" kind="file"><name>carrier_offset_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="nonlinear_8h" kind="file"><name>nonlinear.h</name>
+  </compound>
+  <compound refid="nonlinear__impl_8h" kind="file"><name>nonlinear_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_a6735ed41d8203a491a3b208ee4d5651" kind="dir"><name>ruiy</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

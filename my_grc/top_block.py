@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Mon Apr 24 15:24:15 2017
+# Generated: Fri May 19 22:17:00 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -23,6 +23,7 @@ from gnuradio import gr
 from gnuradio import qtgui
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
+from gnuradio.qtgui import Range, RangeWidget
 from optparse import OptionParser
 import numpy
 import ruiy
@@ -60,15 +61,31 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 320000
+        self.variable_qtgui_range_3 = variable_qtgui_range_3 = 0
+        self.variable_qtgui_range_2 = variable_qtgui_range_2 = 0
+        self.variable_qtgui_range_1 = variable_qtgui_range_1 = 0
+        self.variable_qtgui_range_0 = variable_qtgui_range_0 = 0
+        self.samp_rate = samp_rate = 1e7
 
         ##################################################
         # Blocks
         ##################################################
-        self.ruiy_nonlinear_0 = ruiy.nonlinear()
-        self.ruiy_mul_mod_0 = ruiy.mul_mod("gmsk", "gray", True, 0.35, 1, 0.35, False, False, 2)
-        self.ruiy_iqbal_gen_2_0_0 = ruiy.iqbal_gen_2_0(10, 0, 0, 0)
-        self.ruiy_carrier_offset_0 = ruiy.carrier_offset(1e-6)
+        self._variable_qtgui_range_3_range = Range(-100, 100, 1, 0, 200)
+        self._variable_qtgui_range_3_win = RangeWidget(self._variable_qtgui_range_3_range, self.set_variable_qtgui_range_3, 'DC_Q', "counter_slider", float)
+        self.top_layout.addWidget(self._variable_qtgui_range_3_win)
+        self._variable_qtgui_range_2_range = Range(-100, 100, 1, 0, 200)
+        self._variable_qtgui_range_2_win = RangeWidget(self._variable_qtgui_range_2_range, self.set_variable_qtgui_range_2, 'DC_I', "counter_slider", float)
+        self.top_layout.addWidget(self._variable_qtgui_range_2_win)
+        self._variable_qtgui_range_1_range = Range(0, 180, 1, 0, 200)
+        self._variable_qtgui_range_1_win = RangeWidget(self._variable_qtgui_range_1_range, self.set_variable_qtgui_range_1, 'theta', "counter_slider", int)
+        self.top_layout.addWidget(self._variable_qtgui_range_1_win)
+        self._variable_qtgui_range_0_range = Range(0, 100, 1, 0, 200)
+        self._variable_qtgui_range_0_win = RangeWidget(self._variable_qtgui_range_0_range, self.set_variable_qtgui_range_0, 'mag', "counter_slider", int)
+        self.top_layout.addWidget(self._variable_qtgui_range_0_win)
+        self.ruiy_nonlinear_0 = ruiy.nonlinear(True)
+        self.ruiy_mul_mod_0 = ruiy.mul_mod("qpsk", "gray", True, 0.35, 1, 0.35, False, False, 2)
+        self.ruiy_iqbal_gen_3_0_0 = ruiy.iqbal_gen_3_0(variable_qtgui_range_0, variable_qtgui_range_1, variable_qtgui_range_2, variable_qtgui_range_3)
+        self.ruiy_carrier_offset_0 = ruiy.carrier_offset(0)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
         	1024, #size
         	"", #name
@@ -119,14 +136,42 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.analog_random_source_x_0, 0), (self.ruiy_mul_mod_0, 0))
         self.connect((self.blocks_throttle_0, 0), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.ruiy_carrier_offset_0, 0), (self.ruiy_nonlinear_0, 0))
-        self.connect((self.ruiy_iqbal_gen_2_0_0, 0), (self.ruiy_carrier_offset_0, 0))
-        self.connect((self.ruiy_mul_mod_0, 0), (self.ruiy_iqbal_gen_2_0_0, 0))
+        self.connect((self.ruiy_iqbal_gen_3_0_0, 0), (self.ruiy_carrier_offset_0, 0))
+        self.connect((self.ruiy_mul_mod_0, 0), (self.ruiy_iqbal_gen_3_0_0, 0))
         self.connect((self.ruiy_nonlinear_0, 0), (self.blocks_throttle_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
+
+    def get_variable_qtgui_range_3(self):
+        return self.variable_qtgui_range_3
+
+    def set_variable_qtgui_range_3(self, variable_qtgui_range_3):
+        self.variable_qtgui_range_3 = variable_qtgui_range_3
+        self.ruiy_iqbal_gen_3_0_0.set_dc_q(self.variable_qtgui_range_3)
+
+    def get_variable_qtgui_range_2(self):
+        return self.variable_qtgui_range_2
+
+    def set_variable_qtgui_range_2(self, variable_qtgui_range_2):
+        self.variable_qtgui_range_2 = variable_qtgui_range_2
+        self.ruiy_iqbal_gen_3_0_0.set_dc_i(self.variable_qtgui_range_2)
+
+    def get_variable_qtgui_range_1(self):
+        return self.variable_qtgui_range_1
+
+    def set_variable_qtgui_range_1(self, variable_qtgui_range_1):
+        self.variable_qtgui_range_1 = variable_qtgui_range_1
+        self.ruiy_iqbal_gen_3_0_0.set_theta(self.variable_qtgui_range_1)
+
+    def get_variable_qtgui_range_0(self):
+        return self.variable_qtgui_range_0
+
+    def set_variable_qtgui_range_0(self, variable_qtgui_range_0):
+        self.variable_qtgui_range_0 = variable_qtgui_range_0
+        self.ruiy_iqbal_gen_3_0_0.set_mag(self.variable_qtgui_range_0)
 
     def get_samp_rate(self):
         return self.samp_rate
