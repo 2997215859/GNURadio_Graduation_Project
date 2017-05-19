@@ -33,5 +33,6 @@ except ImportError:
 # import any pure python here
 from mul_mod import mul_mod
 from iqbal_gen_2_0 import iqbal_gen_2_0
+from iqbal_gen_3_0 import iqbal_gen_3_0
 
 #

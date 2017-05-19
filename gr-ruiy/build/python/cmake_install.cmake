@@ -37,6 +37,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/ruiy/gnuradio/gr-ruiy/python/__init__.py"
     "/home/ruiy/gnuradio/gr-ruiy/python/mul_mod.py"
     "/home/ruiy/gnuradio/gr-ruiy/python/iqbal_gen_2_0.py"
+    "/home/ruiy/gnuradio/gr-ruiy/python/iqbal_gen_3_0.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
@@ -45,9 +46,11 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/ruiy/gnuradio/gr-ruiy/build/python/__init__.pyc"
     "/home/ruiy/gnuradio/gr-ruiy/build/python/mul_mod.pyc"
     "/home/ruiy/gnuradio/gr-ruiy/build/python/iqbal_gen_2_0.pyc"
+    "/home/ruiy/gnuradio/gr-ruiy/build/python/iqbal_gen_3_0.pyc"
     "/home/ruiy/gnuradio/gr-ruiy/build/python/__init__.pyo"
     "/home/ruiy/gnuradio/gr-ruiy/build/python/mul_mod.pyo"
     "/home/ruiy/gnuradio/gr-ruiy/build/python/iqbal_gen_2_0.pyo"
+    "/home/ruiy/gnuradio/gr-ruiy/build/python/iqbal_gen_3_0.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

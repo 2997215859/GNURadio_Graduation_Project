@@ -36,6 +36,9 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ruiy" TYPE FILE FILES
     "/home/ruiy/gnuradio/gr-ruiy/include/ruiy/api.h"
     "/home/ruiy/gnuradio/gr-ruiy/include/ruiy/carrier_offset.h"
+    "/home/ruiy/gnuradio/gr-ruiy/include/ruiy/nonlinear.h"
+    "/home/ruiy/gnuradio/gr-ruiy/include/ruiy/nonlinear.h"
+    "/home/ruiy/gnuradio/gr-ruiy/include/ruiy/nonlinear.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

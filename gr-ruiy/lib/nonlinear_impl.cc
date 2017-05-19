@@ -24,25 +24,25 @@
 
 #include <gnuradio/io_signature.h>
 #include "nonlinear_impl.h"
-#include <math.h>
 
 namespace gr {
   namespace ruiy {
 
     nonlinear::sptr
-    nonlinear::make()
+    nonlinear::make(bool is_nonlinear)
     {
       return gnuradio::get_initial_sptr
-        (new nonlinear_impl());
+        (new nonlinear_impl(is_nonlinear));
     }
 
     /*
      * The private constructor
      */
-    nonlinear_impl::nonlinear_impl()
+    nonlinear_impl::nonlinear_impl(bool is_nonlinear)
       : gr::block("nonlinear",
               gr::io_signature::make(1, 1, sizeof(gr_complex)),
-              gr::io_signature::make(1, 1, sizeof(gr_complex)))
+              gr::io_signature::make(1, 1, sizeof(gr_complex))),
+	d_is_nonlinear(is_nonlinear)
     {}
 
     /*
@@ -57,6 +57,7 @@ namespace gr {
     {
       /* <+forecast+> e.g. ninput_items_required[0] = noutput_items */
     }
+
 
     gr_complex nonlinear_impl::complex_power(gr_complex b, int num)
     {
@@ -76,6 +77,8 @@ namespace gr {
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)
     {
+	    
+	    
       const gr_complex *x = (const gr_complex *) input_items[0];
       gr_complex *y = (gr_complex *) output_items[0];
 
@@ -83,6 +86,15 @@ namespace gr {
       // Tell runtime system how many input items we consumed on
       // each input stream.
       consume_each (noutput_items);
+
+      if(d_is_nonlinear == false){
+	      for(int i=0;i<noutput_items;i++){
+		      y[i] = x[i];
+ 	      }
+	      return noutput_items;
+      }
+
+
       for(int i=0;i<5;i++){
 	      y[i] = x[i];
       }
@@ -109,6 +121,7 @@ namespace gr {
       // Tell runtime system how many output items we produced.
       return noutput_items;
     }
+
 
   } /* namespace ruiy */
 } /* namespace gr */

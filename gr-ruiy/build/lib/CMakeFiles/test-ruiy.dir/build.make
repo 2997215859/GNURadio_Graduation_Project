@@ -95,16 +95,41 @@ lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o.provides: lib/CMakeFiles/test-ruiy.dir
 
 lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o.provides.build: lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o
 
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o: lib/CMakeFiles/test-ruiy.dir/flags.make
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o: ../lib/qa_nonlinear.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o -c /home/ruiy/gnuradio/gr-ruiy/lib/qa_nonlinear.cc
+
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.i"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ruiy/gnuradio/gr-ruiy/lib/qa_nonlinear.cc > CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.i
+
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.s"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ruiy/gnuradio/gr-ruiy/lib/qa_nonlinear.cc -o CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.s
+
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.requires:
+.PHONY : lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.requires
+
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.provides: lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.provides.build
+.PHONY : lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.provides
+
+lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.provides.build: lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o
+
 # Object files for target test-ruiy
 test__ruiy_OBJECTS = \
 "CMakeFiles/test-ruiy.dir/test_ruiy.cc.o" \
-"CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o"
+"CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o" \
+"CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o"
 
 # External object files for target test-ruiy
 test__ruiy_EXTERNAL_OBJECTS =
 
 lib/test-ruiy: lib/CMakeFiles/test-ruiy.dir/test_ruiy.cc.o
 lib/test-ruiy: lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o
+lib/test-ruiy: lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o
 lib/test-ruiy: lib/CMakeFiles/test-ruiy.dir/build.make
 lib/test-ruiy: /usr/local/lib/libgnuradio-runtime.so
 lib/test-ruiy: /usr/local/lib/libgnuradio-pmt.so
@@ -126,6 +151,7 @@ lib/CMakeFiles/test-ruiy.dir/build: lib/test-ruiy
 
 lib/CMakeFiles/test-ruiy.dir/requires: lib/CMakeFiles/test-ruiy.dir/test_ruiy.cc.o.requires
 lib/CMakeFiles/test-ruiy.dir/requires: lib/CMakeFiles/test-ruiy.dir/qa_ruiy.cc.o.requires
+lib/CMakeFiles/test-ruiy.dir/requires: lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o.requires
 .PHONY : lib/CMakeFiles/test-ruiy.dir/requires
 
 lib/CMakeFiles/test-ruiy.dir/clean:

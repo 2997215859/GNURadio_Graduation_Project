@@ -46,7 +46,7 @@ namespace gr {
        * class. ruiy::nonlinear::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(bool is_nonlinear);
     };
 
   } // namespace ruiy

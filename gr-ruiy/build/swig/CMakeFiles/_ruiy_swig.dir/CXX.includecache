@@ -16,6 +16,12 @@ ruiy/api.h
 gnuradio/block.h
 -
 
+../include/ruiy/nonlinear.h
+ruiy/api.h
+-
+gnuradio/block.h
+-
+
 /home/ruiy/gnuradio/gr-ruiy/build/swig/ruiy_swigPYTHON_wrap.cxx
 Python.h
 -
@@ -61,6 +67,8 @@ limits.h
 -
 ruiy/carrier_offset.h
 /home/ruiy/gnuradio/gr-ruiy/build/swig/ruiy/carrier_offset.h
+ruiy/nonlinear.h
+/home/ruiy/gnuradio/gr-ruiy/build/swig/ruiy/nonlinear.h
 float.h
 -
 math.h

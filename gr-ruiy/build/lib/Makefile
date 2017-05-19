@@ -201,6 +201,54 @@ carrier_offset_impl.cc.s:
 	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.s
 .PHONY : carrier_offset_impl.cc.s
 
+nonlinear_impl.o: nonlinear_impl.cc.o
+.PHONY : nonlinear_impl.o
+
+# target to build an object file
+nonlinear_impl.cc.o:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o
+.PHONY : nonlinear_impl.cc.o
+
+nonlinear_impl.i: nonlinear_impl.cc.i
+.PHONY : nonlinear_impl.i
+
+# target to preprocess a source file
+nonlinear_impl.cc.i:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.i
+.PHONY : nonlinear_impl.cc.i
+
+nonlinear_impl.s: nonlinear_impl.cc.s
+.PHONY : nonlinear_impl.s
+
+# target to generate assembly for a file
+nonlinear_impl.cc.s:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.s
+.PHONY : nonlinear_impl.cc.s
+
+qa_nonlinear.o: qa_nonlinear.cc.o
+.PHONY : qa_nonlinear.o
+
+# target to build an object file
+qa_nonlinear.cc.o:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.o
+.PHONY : qa_nonlinear.cc.o
+
+qa_nonlinear.i: qa_nonlinear.cc.i
+.PHONY : qa_nonlinear.i
+
+# target to preprocess a source file
+qa_nonlinear.cc.i:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.i
+.PHONY : qa_nonlinear.cc.i
+
+qa_nonlinear.s: qa_nonlinear.cc.s
+.PHONY : qa_nonlinear.s
+
+# target to generate assembly for a file
+qa_nonlinear.cc.s:
+	cd /home/ruiy/gnuradio/gr-ruiy/build && $(MAKE) -f lib/CMakeFiles/test-ruiy.dir/build.make lib/CMakeFiles/test-ruiy.dir/qa_nonlinear.cc.s
+.PHONY : qa_nonlinear.cc.s
+
 qa_ruiy.o: qa_ruiy.cc.o
 .PHONY : qa_ruiy.o
 
@@ -267,6 +315,12 @@ help:
 	@echo "... carrier_offset_impl.o"
 	@echo "... carrier_offset_impl.i"
 	@echo "... carrier_offset_impl.s"
+	@echo "... nonlinear_impl.o"
+	@echo "... nonlinear_impl.i"
+	@echo "... nonlinear_impl.s"
+	@echo "... qa_nonlinear.o"
+	@echo "... qa_nonlinear.i"
+	@echo "... qa_nonlinear.s"
 	@echo "... qa_ruiy.o"
 	@echo "... qa_ruiy.i"
 	@echo "... qa_ruiy.s"

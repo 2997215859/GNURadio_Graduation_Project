@@ -10,24 +10,22 @@
 gnuradio/attributes.h
 -
 
-../include/ruiy/carrier_offset.h
+../include/ruiy/nonlinear.h
 ruiy/api.h
 -
 gnuradio/block.h
 -
 
-/home/ruiy/gnuradio/gr-ruiy/lib/carrier_offset_impl.cc
+/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.cc
 config.h
 /home/ruiy/gnuradio/gr-ruiy/lib/config.h
 gnuradio/io_signature.h
 -
-carrier_offset_impl.h
-/home/ruiy/gnuradio/gr-ruiy/lib/carrier_offset_impl.h
-math.h
--
+nonlinear_impl.h
+/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h
 
-/home/ruiy/gnuradio/gr-ruiy/lib/carrier_offset_impl.h
-ruiy/carrier_offset.h
+/home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.h
+ruiy/nonlinear.h
 -
 
 /usr/local/include/gnuradio/api.h

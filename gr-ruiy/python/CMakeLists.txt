@@ -33,7 +33,7 @@ GR_PYTHON_INSTALL(
     __init__.py
     mul_mod.py
     iqbal_gen_2_0.py
-    DESTINATION ${GR_PYTHON_DIR}/ruiy
+    iqbal_gen_3_0.py DESTINATION ${GR_PYTHON_DIR}/ruiy
 )
 
 ########################################################################
@@ -46,4 +46,7 @@ set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_mul_mod ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_mul_mod.py)
 GR_ADD_TEST(qa_iqbal_gen_2_0 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_iqbal_gen_2_0.py)
 GR_ADD_TEST(qa_carrier_offset ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_carrier_offset.py)
+GR_ADD_TEST(qa_iqbal_gen_3_0 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_iqbal_gen_3_0.py)
+GR_ADD_TEST(qa_nonlinear ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_nonlinear.py)
+GR_ADD_TEST(qa_nonlinear ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_nonlinear.py)
 GR_ADD_TEST(qa_nonlinear ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_nonlinear.py)

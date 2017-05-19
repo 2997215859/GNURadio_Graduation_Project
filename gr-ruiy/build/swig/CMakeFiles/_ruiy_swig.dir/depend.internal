@@ -4,6 +4,7 @@
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o
  ../include/ruiy/api.h
  ../include/ruiy/carrier_offset.h
+ ../include/ruiy/nonlinear.h
  /home/ruiy/gnuradio/gr-ruiy/build/swig/ruiy_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h

@@ -3,6 +3,7 @@
 
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: ../include/ruiy/api.h
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: ../include/ruiy/carrier_offset.h
+swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: ../include/ruiy/nonlinear.h
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: swig/ruiy_swigPYTHON_wrap.cxx
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/Python.h
 swig/CMakeFiles/_ruiy_swig.dir/ruiy_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/abstract.h

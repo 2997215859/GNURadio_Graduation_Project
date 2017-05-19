@@ -72,14 +72,39 @@ lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o.provides: lib/CMakeFil
 
 lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o
 
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o: lib/CMakeFiles/gnuradio-ruiy.dir/flags.make
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o: ../lib/nonlinear_impl.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiy/gnuradio/gr-ruiy/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o -c /home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.cc
+
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.i"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.cc > CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.i
+
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.s"
+	cd /home/ruiy/gnuradio/gr-ruiy/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ruiy/gnuradio/gr-ruiy/lib/nonlinear_impl.cc -o CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.s
+
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.requires:
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.provides: lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ruiy.dir/build.make lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o
+
 # Object files for target gnuradio-ruiy
 gnuradio__ruiy_OBJECTS = \
-"CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o"
+"CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o" \
+"CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o"
 
 # External object files for target gnuradio-ruiy
 gnuradio__ruiy_EXTERNAL_OBJECTS =
 
 lib/libgnuradio-ruiy-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o
+lib/libgnuradio-ruiy-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o
 lib/libgnuradio-ruiy-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ruiy.dir/build.make
 lib/libgnuradio-ruiy-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-ruiy-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -100,6 +125,7 @@ lib/CMakeFiles/gnuradio-ruiy.dir/build: lib/libgnuradio-ruiy-1.0.0git.so
 .PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/build
 
 lib/CMakeFiles/gnuradio-ruiy.dir/requires: lib/CMakeFiles/gnuradio-ruiy.dir/carrier_offset_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-ruiy.dir/requires: lib/CMakeFiles/gnuradio-ruiy.dir/nonlinear_impl.cc.o.requires
 .PHONY : lib/CMakeFiles/gnuradio-ruiy.dir/requires
 
 lib/CMakeFiles/gnuradio-ruiy.dir/clean:

@@ -31,8 +31,9 @@ namespace gr {
      private:
       // Nothing to declare in this block.
 
+	  bool d_is_nonlinear;
      public:
-      nonlinear_impl();
+      nonlinear_impl(bool is_nonlinear);
       ~nonlinear_impl();
 
       // Where all the action really happens

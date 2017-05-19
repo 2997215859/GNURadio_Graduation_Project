@@ -37,6 +37,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_mul_mod.xml"
     "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_iqbal_gen_2_0.xml"
     "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_carrier_offset.xml"
+    "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_iqbal_gen_3_0.xml"
+    "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_nonlinear.xml"
+    "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_nonlinear.xml"
+    "/home/ruiy/gnuradio/gr-ruiy/grc/ruiy_nonlinear.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

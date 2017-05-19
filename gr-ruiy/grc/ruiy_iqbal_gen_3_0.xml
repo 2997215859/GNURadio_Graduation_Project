@@ -1,27 +1,38 @@
 <?xml version="1.0"?>
 <block>
-  <name>nonlinear</name>
-  <key>ruiy_nonlinear</key>
+  <name>iqbal_gen_3_0</name>
+  <key>ruiy_iqbal_gen_3_0</key>
   <category>[ruiy]</category>
   <import>import ruiy</import>
-  <make>ruiy.nonlinear($is_nonlinear)</make>
+  <make>ruiy.iqbal_gen_3_0($mag, $theta, $dc_i, $dc_q)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
        * type -->
   <param>
-    <name>is_nonlinear</name>
-    <key>is_nonlinear</key>
-    <type>enum</type>
-    <option>
-      <name>Yes</name>
-      <key>True</key>
-    </option>
-    <option>
-      <name>No</name>
-      <key>False</key>
-    </option>
+    <name>Mag</name>
+    <key>mag</key>
+    <value>0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Theta</name>
+    <key>theta</key>
+    <value>0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>I's DC</name>
+    <key>dc_i</key>
+    <value>0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Q's DC</name>
+    <key>dc_q</key>
+    <value>0</value>
+    <type>float</type>
   </param>
 
   <!-- Make one 'sink' node per input. Sub-nodes:

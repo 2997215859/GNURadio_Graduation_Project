@@ -20,5 +20,8 @@ install(FILES
     ruiy_mul_mod.xml
     ruiy_iqbal_gen_2_0.xml
     ruiy_carrier_offset.xml
+    ruiy_iqbal_gen_3_0.xml
+    ruiy_nonlinear.xml
+    ruiy_nonlinear.xml
     ruiy_nonlinear.xml DESTINATION share/gnuradio/grc/blocks
 )
