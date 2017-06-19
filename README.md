@@ -10,5 +10,9 @@
   $ sudo make install
   $ sudo ldconfig
   ```
-3. 在GRC中刷新，即可在右侧`ruiy`模块下见到新增的几个Block。有**carrier_offset**、**iqbal_gen_3_0**、**mul_mod**、**nonlinear**四个Block，分别用来产生载波、IQ不平衡、不同调制信号、非线性。其中非线性的算法直接写在了模块中，如果需要更改对信号的处理，需要更改源代码，并重新编译安装。
+3. 在GRC中刷新，即可在右侧`ruiy`模块下见到新增的几个Block。有**carrier_offset**、**iqbal_gen_3_0**、**mul_mod**、**nonlinear**四个Block，分别用来产生载波、IQ不平衡、不同调制信号、非线性。其中非线性的算法直接写在了模块中，如果需要更改对信号的处理，需要更改源代码，并重新编译安装。不同Block对应的源文件如下。其他模块也是，修改对应模块的源代码，然后按照步骤2中的操作，重新编译安装即可。
+- **carrier_offset** <=> `gr-ruiy/lib/carrier_offset_impl.cc` 和 `carrier_offset_impl.h`
+- **iqbal_gen_3_0** <=> `gr-ruiy/python/iqbal_gen_3_0.py`
+- **mul_mod** <=> `gr-ruiy/python/mul_mod.py`
+- **nonlinear** <=> `gr-ruiy/lib/nonlinear_impl.cc 和 nonlinear_impl.h`
 
