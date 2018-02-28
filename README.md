@@ -2,8 +2,8 @@
 # 毕设做的GNURadio相关的工作
 
 ## 安装说明：
-1. 在本地计算机新建文件夹`/home/ruiy/`，在该目录下执行`git clone git@github.com:2997215859/GNURadio_Graduation_Project.git gnuradio`，将在该目录下得到文件夹`gnuradio`。其中包括`gr-ruiy`文件夹和`my-grc`文件夹，前者包括本次毕业设计所写模块，后者中的`bysj1_0.grc`是本次毕业设计的内容。
-2. 切到`gr-ruiy/build`目录下，依次执行下列命令
+1. 在本地计算机执行`git clone git@github.com:2997215859/GNURadio_Graduation_Project.git gnuradio`，即克隆得到该项目。其中包括`gr-ruiy`文件夹和`my-grc`文件夹，前者包括本次毕业设计所写模块，后者中的`bysj1_0.grc`是本次毕业设计的内容。
+2. 切到`gr-ruiy/build`目录下（如果已经存在，则删除重建rm -fr build/），依次执行下列命令
   ```
   $ cmake ../
   $ make
